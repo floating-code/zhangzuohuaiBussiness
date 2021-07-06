@@ -1,0 +1,48 @@
+
+
+
+
+<style>
+  html,body{
+    height: 100%;
+  }
+
+  body{
+    margin:0 ;
+    font-size: 12px; 
+    box-sizing: border-box;
+  }
+</style>
+
+<style scoped>
+#app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1;
+  overflow-y: scroll;
+}
+.bottom {
+  height: 40px;
+  display: flex;
+  border-top: 1px solid blue;
+}
+.bottom > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#444;
+}
+.bottom > div:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+.bottom > div.router-link-exact-active {
+  color:#F18741;
+  font-weight:bold;
+  background:#FEF5EF;
+}
+</style>
+
